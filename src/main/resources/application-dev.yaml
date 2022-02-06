@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/genericDB
+    username: postgres
+    password: teste12
+    driverClassName: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  sql:
+    init:
+      mode: always
+      platform: postgres
+      schema-locations: schema-postgres.sql

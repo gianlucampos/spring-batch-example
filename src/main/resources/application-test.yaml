@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    #    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:./src/main/resources/testdb
+    username: postgres
+    password: teste12
+  batch:
+    jdbc:
+      initialize-schema: always
+  sql:
+    init:
+      mode: always
